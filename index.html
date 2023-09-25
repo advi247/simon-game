@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press Here to Start</h1>
+  <div class="container">
+    <div class="row">
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
+    </div>
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
+    </div>
+  </div>
+
+  <button class="rules-btn">Show/Hide Rules</button>
+  <div class="rules">
+    <ul>
+      <li>Once you start the game, one of the four colours will be highlighted, along with a corresponding sound, by the system.</li>
+      <li>You will have to press the same colour to proceed.</li>
+      <li>With every level, a new colour is highlighted, in a random sequence.</li>
+      <li>You'll have to remember the sequence and press the colours.</li>
+      <li>For e.g, if red is highlighted in level 1, press red. If green is highlighted in level 2, the sequence is red green. 
+        If level 3 highlights red again, the sequence is red green red.</li>
+      <li>If you miss a member of the sequence and press the wrong colour, the game will restart.</li>
+      <li>Good luck and have fun!</li>
+    </ul>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js" charset="UTF-8"></script>
+</body>
+
+</html>
